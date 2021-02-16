@@ -11,7 +11,7 @@ while True:
  x = sniff(filter="udp and port 6672", prn=pc, store=1, count=1)# GTA V Online UDP default Port is 6672
  y = x[0][IP].src
  z = x[0][IP].dst
- if z == "192.168.0.102":#replace with your local IP
+ if z == "192.168.1.254":#replace with your local IP
      pass
  else:
    print("-----------------------------------------------------------")
